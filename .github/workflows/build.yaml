@@ -6,9 +6,6 @@ on:
         type: string
 
 jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-latest
+  uses: ./.github/workflows/build-1.yaml
+  with:
     environment: ${{ inputs.environment }}
-    steps:
-      - run: echo "The current environment is ${{ vars.name }}"
