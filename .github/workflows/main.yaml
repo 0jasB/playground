@@ -4,6 +4,6 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/build.yml
+    uses: 0jasB/playground/.github/workflows/build.yml
     with:
       environment: A
