@@ -6,6 +6,7 @@ on:
         type: string
 
 jobs:
-  uses: ./.github/workflows/build-1.yaml
-  with:
-    environment: ${{ inputs.environment }}
+  build-1:
+    uses: ./.github/workflows/build-1.yaml
+    with:
+      environment: ${{ inputs.environment }}
